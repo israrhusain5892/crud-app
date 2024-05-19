@@ -25,7 +25,7 @@ app.get('/get/:id', personController.getPerson);
 
 app.options('*',cors());
 
-const PORT=process.env.PORT_NUMBER || 3000;
+const PORT=process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("server running on port 3001")
 });
