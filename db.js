@@ -4,8 +4,14 @@ const Person=require('./Models/Person')
   
   const sequelize=new Sequelize(process.env.DATABASENAME, process.env.USER_NAME, process.env.PASSWORD,{
 
-       host:process.env.HOST,
-       'dialect':process.env.DIALECT
+        host:process.env.HOST,
+       'dialect':'mysql',
+        port:'32773',
+
+       "dialectOptions": {
+        "requestTimeout": 300000
+      },
+      
   });
 
   try{
