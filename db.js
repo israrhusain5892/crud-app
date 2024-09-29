@@ -6,7 +6,7 @@ const Person=require('./Models/Person')
 
         host:process.env.HOST,
        'dialect':'mysql',
-        port:'32773',
+        port:'28300',
 
        "dialectOptions": {
         "requestTimeout": 300000
